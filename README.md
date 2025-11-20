@@ -1,13 +1,13 @@
-# tsukuba.yokohama.dev
+# ooo.kayama.ooo
 
-筑波大学にいるかいないかを記録・公開する Web サイト
+東京科学大学にいるかいないかを記録・公開する Web サイト
 
-<https://tsukuba.yokohama.dev>
+<https://ooo.kayama.ooo>
 
 ## 仕様・使い方
 
 ### 判定
-- `130.158.0.0/16`, `133.51.0.0/16` からの接続を学内と判定します
+- `131.112.0.0/16`, `2403:4440::/32` からの接続を学内と判定します
 - VPN 経由での接続は学内判定されません
 
 ### 初回登録
@@ -26,7 +26,7 @@
 ### 記録
 - 以下の POST リクエストを送信してください
   ```bash
-  curl -X POST https://tsukuba.yokohama.dev/api/checkins \
+  curl -X POST https://ooo.kayama.ooo/api/checkins \
     -H "Authorization: <YOUR_TOKEN>"
   ```
   - レートリミット（100 回/時間）を設けています
@@ -36,12 +36,12 @@
 
 launchd を用いて上記コマンドを定期実行できます
 
-1. `dev.yokohama.tsukuba.plist` をダウンロードします
+1. `ooo.kayama.ooo.plist` をダウンロードします
 2. `$YOUR_TOKEN` を書き換えた上で `~/Library/LaunchAgents` に保存します
-3. `launchctl load ~/Library/LaunchAgents/dev.yokohama.tsukuba.plist` を実行します
+3. `launchctl load ~/Library/LaunchAgents/ooo.kayama.ooo.plist` を実行します
 
 ### 記録の確認
-  - <https://tsukuba.yokohama.dev/@screenname> から確認できます
+  - <https://ooo.kayama.ooo/@screenname> から確認できます
 
 ## 開発
 

@@ -1,5 +1,5 @@
 {
-  "name": "tsukuba-yokohama-dev",
+  "name": "ooo-kayama-ooo",
   "scripts": {
     "dev": "wrangler dev",
     "deploy": "wrangler deploy --minify",

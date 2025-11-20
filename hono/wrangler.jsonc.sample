@@ -1,6 +1,6 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
-  "name": "tsukuba-yokohama-dev",
+  "name": "ooo-kayama-ooo",
   "main": "src/index.ts",
   "compatibility_date": "2025-06-22",
   "assets": {
@@ -12,7 +12,7 @@
   "d1_databases": [
     {
       "binding": "DB",
-      "database_name": "tsukuba-yokohama-dev",
+      "database_name": "ooo-kayama-ooo",
       "database_id": "<DATABASE_ID>",
       "preview_database_id": "<PREVIEW_DATABASE_ID>"
     }
